@@ -1,0 +1,1028 @@
+{
+  "schema": "CSSF-ACTIVE-RELEASE-INVENTORY-v62",
+  "date": "2026-08-22",
+  "release_profile": "PUBLIC_GITHUB_RELEASE",
+  "canonical_colab_root": "/content/drive/MyDrive/cssf_dwave",
+  "file_count_including_inventory": 169,
+  "f0_count": 67,
+  "f1_count": 5,
+  "notebook_count": 2,
+  "language_policy": "ENGLISH_ONLY_PUBLIC_REPOSITORY",
+  "monograph_policy": "PAID_MONOGRAPH_EXTERNAL_ONLY",
+  "files": [
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "CITATION.cff",
+      "sha256": "d4d4f40f95399622b3f9e4655b17a7cbcfbd1350e6cd321e25d2b9e9c3ee150b",
+      "size_bytes": 521
+    },
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "LICENSE",
+      "sha256": "f6be00cbc064dbc76a48a60590a69743c470e86102b42535d41f7e7c317b0a7b",
+      "size_bytes": 11310
+    },
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "README.md",
+      "sha256": "df8bb7e60a99f7176d16f741202f6943090175f4dfdf710cd7eeefa6721bc8ad",
+      "size_bytes": 19176
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "baselines/__init__.py",
+      "sha256": "eb3c9dc6240353ed5ed9635b2e553f7531fe2ae9ad4b4c7ac1adecc10f1b870f",
+      "size_bytes": 7059
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "baselines/comparison.py",
+      "sha256": "9292850b7fa24426e7e51d5374e4f72e3da07e244114d46b9ed20a437015c601",
+      "size_bytes": 31314
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "baselines/highs.py",
+      "sha256": "f540ad09e4b2c4468674f2a301811440faf716ff5ebebfb42df243b80ee5e05e",
+      "size_bytes": 31895
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "benchmarks/__init__.py",
+      "sha256": "7f28bc368b9a875e7f5672f2487d289e9bfba8f5c5c5109d784d5c8a3e91b5e7",
+      "size_bytes": 143
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "benchmarks/reference_competitors.py",
+      "sha256": "5d1b920613775109209db240a8de50cad10b842795c79a1092b7a6383e38e4fc",
+      "size_bytes": 94293
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "bess/__init__.py",
+      "sha256": "64bc9ec15191a9d75d8350ff58155ce23bce0d381bce88d18212de8c376298b7",
+      "size_bytes": 9879
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "bess/candidates.py",
+      "sha256": "2d123d323d7f73f607d85ccdb31a0fbbb226b5cceab9959e03d729ed9167f1b5",
+      "size_bytes": 11279
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "bess/case300.py",
+      "sha256": "0c7d1f57daa3e918a4d1b898b88ff693c3d1d8fb30bdb1efc566a2a23ca256a5",
+      "size_bytes": 22663
+    },
+    {
+      "class": "PUBLIC_INPUT",
+      "path": "calibration/09-1263A-C_Advantage_system4_annealing_schedule.xlsx",
+      "sha256": "03350bb86bab2f752697e1a8c37f3e4c2100c6596d0f6c6bf8f6d2e3e97de4f1",
+      "size_bytes": 106446
+    },
+    {
+      "class": "PUBLIC_INPUT",
+      "path": "calibration/09-1273A-F_Advantage_system6_annealing_schedule.xlsx",
+      "sha256": "d266ee71c8a0611cc392781da4df65e20969aed658b5df60453ac099202fdc06",
+      "size_bytes": 106446
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/__init__.py",
+      "sha256": "3052cf8b8f81d62fd4e2cd49ce5ef47e5b1109cfeac67e2cd04e40811657313d",
+      "size_bytes": 1280
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/annealing.py",
+      "sha256": "93c3b6307a22aa6159fca2fa36d3461ea5e59415e0a02c6584e8855645a05a80",
+      "size_bytes": 3058
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/dataset.py",
+      "sha256": "44641a40524563b55fb618d29f7fae74ab096b2d696861e5058f9456c40f3786",
+      "size_bytes": 2440
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/metrics.py",
+      "sha256": "16b3ef0b006a8c2d2d5c84c565a1cb4ec7da0ae12c17b5d152e6755c880ddd9d",
+      "size_bytes": 1362
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/mpf.py",
+      "sha256": "09ae9607552b2284f928db4fa0aebce5e85e3392e1fcd7191d72b8ebef122555",
+      "size_bytes": 749
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/qpu.py",
+      "sha256": "210037217c7fd5e84f32a6dd42e98361c53777877a51bf16de158207fc081d56",
+      "size_bytes": 7678
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/qubo.py",
+      "sha256": "4e5325d184081a24a8f81a172e9235b8d937db3db793944a4a0430f53c0d998d",
+      "size_bytes": 6977
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "case300_compat/validation.py",
+      "sha256": "a4adb3e7a556d268435b272d75a44c1b51b7fdd1d52268b921b7eba2aa63e4dd",
+      "size_bytes": 601
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/__init__.py",
+      "sha256": "3f3231941b6f70eacd9370fdcf11d171900ffc941bedf075d0bd4545a06f4f6c",
+      "size_bytes": 1253
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/base.yaml",
+      "sha256": "8b82aa1e4741fbb7474e9f5d70bf84bedae64b9107cb5524cb9f46eba5f96a04",
+      "size_bytes": 3701
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/case300.yaml",
+      "sha256": "5948a1ab0d763bda7bd5c969516d05af996d7f74d3ecd604c7a1db06212ebe8f",
+      "size_bytes": 2944
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/emulator_gpu.yaml",
+      "sha256": "bd32c8520fd3de1f7f5d85ee5f4d5ad6983a6851aaf0b9863c3b60f05df5632b",
+      "size_bytes": 1963
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/loader.py",
+      "sha256": "6b67f37394679c14aed7bca3c2648f99a535170207a7fada2a335ceb60840ae7",
+      "size_bytes": 8171
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/pegasus_qpu.yaml",
+      "sha256": "a6993bce8ca7ac762e29dc651c2e23422868678f37e520b1ed50583a3b30dd75",
+      "size_bytes": 1939
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/qpu_compat_v53.py",
+      "sha256": "d574209508ad8efbf6d5b49857c5e9b1f68617214a49b970a54391d245bf9c16",
+      "size_bytes": 1701
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "config/schema.py",
+      "sha256": "317819197b3520f48d87afb0e79028d1526641a33594c80966307850b51550f2",
+      "size_bytes": 15924
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/__init__.py",
+      "sha256": "9d7e541ad361352663afe8d8bc2952d81f75af9c4c36e28fadb68621b3654f42",
+      "size_bytes": 1810
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/csnn_t.py",
+      "sha256": "afcc08ebd3237ec722669b703f2b8087e457d07d43655823988d60ce7c87d8c8",
+      "size_bytes": 4965
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/csnn_t_adapter.py",
+      "sha256": "41622a97c885df2484a2e7f2299334bd5fc7d161f2aa73694654eb5ba14f2183",
+      "size_bytes": 14918
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/csnn_t_adapter_v53.py",
+      "sha256": "4f630c28571c37194f1528965c1fc7fed0706661ff77c91ad2ef12836f8cec54",
+      "size_bytes": 4932
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/dataset.py",
+      "sha256": "5f0a20a38a3e3b1eb9898ae6cbef9a87aa6e5a38d994f16280a2efc7c7209572",
+      "size_bytes": 24271
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/frozen_manifest.json",
+      "sha256": "2b8e0630a4c042e95007a12f5b9f32be2020a3a60ca9362a9a4ff8178ec98cfe",
+      "size_bytes": 1413
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/gcv.py",
+      "sha256": "3a4f4298a65d486269c6d4657d21f98f864b590e869fe80eefe2e9cdbb4c8ff7",
+      "size_bytes": 6495
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/gcv_stable_v53.py",
+      "sha256": "11763a9ab87cd233785400d49b0ef693595fc1ec754280048a6feabe0e3e1b51",
+      "size_bytes": 5619
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/randomness.py",
+      "sha256": "7e63a6f8f9cbb9629095fc54e28d5acc200940dc70f62ca39b87060c75ee71e2",
+      "size_bytes": 7267
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/types.py",
+      "sha256": "1215bae09b15f2803586660e15a220981e5ac2edaae8b64c76229cb417f67418",
+      "size_bytes": 10886
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "core/validation.py",
+      "sha256": "361b0bb1c38d0158bc84bb03ba52e46065ce92e4a67ae5bcd939738e49919079",
+      "size_bytes": 13074
+    },
+    {
+      "class": "PUBLIC_INPUT",
+      "path": "data/case300_full_modeA_Barskyi_Serhii.json",
+      "sha256": "2764826242d9f9ecfdc6e8f0d78a8cac452c39b9091ed84a74f1771e6df52539",
+      "size_bytes": 93897330
+    },
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "docs/CASE300_RETAINED_EVIDENCE.md",
+      "sha256": "2feda60ce92cc9162951810d745935ff48065f9f8f8dc8a242cac3168e2b2060",
+      "size_bytes": 3323
+    },
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "docs/NOTEBOOK_CASE300.md",
+      "sha256": "63a2b65fb815e4cebb06710dbe20d4357fe5560274f3247226896be355976750",
+      "size_bytes": 3278
+    },
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "docs/NOTEBOOK_SIMULATOR.md",
+      "sha256": "431259ce962fefcc6faa48710ee515ccb211391894d565422f499a3b3acb8c01",
+      "size_bytes": 1057
+    },
+    {
+      "class": "PUBLIC_DOCUMENT",
+      "path": "docs/PUBLIC_METHOD_AND_CLAIM_BOUNDARIES.md",
+      "sha256": "c6d63d2219a405969ac8e33c1e305790006e8d82d53131d23efbd62acb306bf1",
+      "size_bytes": 3980
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/__init__.py",
+      "sha256": "5634e013fbb3574d430538be2586d928aebd15c1a55c36f49ba037e4c8704e40",
+      "size_bytes": 7684
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/pegasus_fabric_v53.py",
+      "sha256": "5fc5762031676aea1c55113d327a3cfc92308faa4c54395cefe72c0631cf8494",
+      "size_bytes": 9527
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/runtime_diagnostics.py",
+      "sha256": "46144f5b89eb7cf2d55693702bb393073f25633ff29ed2e899798a19e0d6e898",
+      "size_bytes": 19692
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/sampler.py",
+      "sha256": "fb36640da771c23e9450ee347e187329d35f28de3f80f4bb4fed324622bbfca6",
+      "size_bytes": 93492
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/sampler_v53.py",
+      "sha256": "9d36df624056269a559c45bb0e32fb623f2db4560843d7f32f6d7931f0773a92",
+      "size_bytes": 14792
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/sampleset.py",
+      "sha256": "6c5b2a217e2850d3acd9458802633c6822a53af3715c263fcd156bc81b530113",
+      "size_bytes": 30321
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/solver.py",
+      "sha256": "2a420dfed10413f4a9363821433c5cd6828b3f0c2982f4503729f5349fdeb23a",
+      "size_bytes": 29646
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "dwave_backend/topology.py",
+      "sha256": "fbd3bfdad01c092a8568a0a2a15058d24cfc77a3060975b04ca49051be5762c7",
+      "size_bytes": 33896
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/__init__.py",
+      "sha256": "1ada496664879a867b9d64a86a1b1880712f5e017883a8bf0d20499fc4fd6e71",
+      "size_bytes": 71
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/analytical_preflight.py",
+      "sha256": "8d5eb2102f03c8d27ce4eedf10e778100eec993eeb8c9933ac1dd79c69a59e30",
+      "size_bytes": 26910
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/analytical_preflight_core.py",
+      "sha256": "8807a439f9980a273cbc5945b662eea2465ad54f8fa32ca737322f7805ee8190",
+      "size_bytes": 20602
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/application_endpoint_v38.py",
+      "sha256": "e041c51f41bcca35233734fa5fc1f92baaa95197547ef74dc4456ae60bf434d2",
+      "size_bytes": 14619
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/benchmark_protocol.py",
+      "sha256": "515c6888ba2ca327889b4e0e3e9e7fce408bd2b46b208522de89add7ac7cc465",
+      "size_bytes": 15451
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/bess_evidence.py",
+      "sha256": "fb4ca56fb8a9fc80b72b7a30663017e7b9b81e9ba3855301a08fa621249165bb",
+      "size_bytes": 5523
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/claim_set_v38.py",
+      "sha256": "049af8460923092ee5b22116e5cdc251b616828cc2a76cd90693fbb1fe384390",
+      "size_bytes": 536
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/colab_environment_v51.py",
+      "sha256": "dbf27df3b4b957adbd2d548949226be43a4f42a4e964772f308e6f60b905f349",
+      "size_bytes": 5952
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/competitor_fidelity.py",
+      "sha256": "c92fa703e2dbc89acac2bfe8b422db5d6cbd93f3eac53be06720f6a3ea18b0ff",
+      "size_bytes": 8860
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/contract_evidence_v38.py",
+      "sha256": "3388997a8106323b3800a8daa416c5e652bd1563ce6252f5d23f6ce6dc9788e5",
+      "size_bytes": 25876
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/control_design.py",
+      "sha256": "f0d879d6e5feb625774290d71e940ceb20abaf7152c1c1cdea83f7de2dad1116",
+      "size_bytes": 4080
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/csnnt_audit_v38.py",
+      "sha256": "2b0ca20139ad8b5cf53fb5f239a9e0f5f6f72a0191b503b3206894b60fe7c2b9",
+      "size_bytes": 4843
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/cssf_control.py",
+      "sha256": "856088c35b6539c795d714d82c3a28de735e6a0b17dcd29e442ee0d19a91acf9",
+      "size_bytes": 9972
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/cssf_control_v53.py",
+      "sha256": "388fae93877d7d1d9216f8c0590602384c99f3498ef9c10b6822de7c72c98a7d",
+      "size_bytes": 9976
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/director_matrix_v53.py",
+      "sha256": "357b49f80eb72ecac4dbf8f4240fdb20252f27a7988ec1533fca4c0d5c789fae",
+      "size_bytes": 103428
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/eeg_phase_syntax_v51.py",
+      "sha256": "3318522fe248bce706f6ab3d84271fb26d3ce2e5dc709c2b9aa665d5d9668277",
+      "size_bytes": 20527
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/evidence_program.py",
+      "sha256": "536b4cb9b85b70148f7c5e41fe9c3e8d31c1a64c90b7710da4681ae10dbcad74",
+      "size_bytes": 15540
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/evidence_program_v53.py",
+      "sha256": "e8a7a4bbe13fb6943c17276d5cf40e8a66ee0bdbad19f1780d58a95f4876222d",
+      "size_bytes": 16336
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/evidence_v38.py",
+      "sha256": "79d5a6f82c3b8a2f5b62a74ecd7b6ee90a6b3e7b17db5ea41a4b2df8ce2305a1",
+      "size_bytes": 5638
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/experiment_tasks.py",
+      "sha256": "bed6b3db2dcdea0628efdcd78d810846116688a84f1ceaac8473df43db5fed70",
+      "size_bytes": 15353
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/factorial_campaign_v38.py",
+      "sha256": "57fe7ea874332954db28892875c80875c55f6c2c7b7e4399e1650efa67ecd810",
+      "size_bytes": 9980
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/factorial_runtime_v53.py",
+      "sha256": "a793fbb1e5e82cea84d5ec8d1569397c892ad46fc2b9d218da0f80075f89e25d",
+      "size_bytes": 12338
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/factorial_runtime_v54.py",
+      "sha256": "c4d973a0a3e67bc35335e88cfe008731f00b6014dada53890a5eb1074a3843cb",
+      "size_bytes": 16663
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/hierarchical_refinement_v38.py",
+      "sha256": "d9632ff8984ab8161cd7fee02572a0fa9f5d2374568d54106bfe23716ea55028",
+      "size_bytes": 4659
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/integrated_bess_v38.py",
+      "sha256": "eede387400bab78efc8517be25c7b27f7ede624a42e0ae0ece99f070e9909e14",
+      "size_bytes": 21882
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/integrated_bess_v54.py",
+      "sha256": "a6c0625f4ec8da28db2fc5d82a2bdd7c7f734b8ceb9cc85e8b637f2d83d86062",
+      "size_bytes": 6927
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/notebook_program.py",
+      "sha256": "e63b700a6cf68721c03cdc03cd87c69476ad0fcd7ad07309d27424f2b27401af",
+      "size_bytes": 15846
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/operator_phase.py",
+      "sha256": "8ccfb4ac9cc1a323f7a26b5f509f1532d2a47661dab2aa845d4fc9198d27b96f",
+      "size_bytes": 8123
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/pegasus_control_backend.py",
+      "sha256": "f80639332ffcd84d11034d71939b7d23a59738659a345f51502eb78bcf412f0e",
+      "size_bytes": 13620
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/pegasus_control_backend_v53.py",
+      "sha256": "4dc43336c1f0f6b1acb5d4725184556db38ec5c230e6145a566a5062050afec8",
+      "size_bytes": 13569
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/qzero_runtime_v38.py",
+      "sha256": "edf9fea75c3cf8ec642349f0e26122fd8dac1849839ca412de0ff5fef1188277",
+      "size_bytes": 8174
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/residual_program_v38.py",
+      "sha256": "1c83d100c85ed36f557c6a54d40762677dc759452e8b0ead180a21addad6219a",
+      "size_bytes": 6334
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/residual_program_v53.py",
+      "sha256": "355ec0966283b242f7919a866b39e5773f535d0d596d491056a897396f1b0943",
+      "size_bytes": 6342
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/residual_teacher_v38.py",
+      "sha256": "0db96b0a722581b1c62f31d504c636f752e4a1900bc163b01d7ffc561d4488b6",
+      "size_bytes": 9582
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/sequential_campaign.py",
+      "sha256": "d9a000f7dc47a559a0ed46fa804f2ded0c117647dc6dd8a474e020e2730bcdf5",
+      "size_bytes": 12130
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/surrogate_validation.py",
+      "sha256": "c31fcf87e85018fdfd7c679a7eed922a3ad2a6f29f5feca8da2d30d2f0129054",
+      "size_bytes": 4983
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/__init__.py",
+      "sha256": "fa3efa82a7bec99594bfadbb6e0af0f45f0561de2658286543a2d2b0382c6e1a",
+      "size_bytes": 263
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/aggregate.py",
+      "sha256": "cf59ccf9b41c590c594410453ac22713fffe790f39f74eaea547fe152a5033ba",
+      "size_bytes": 2720
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/common.py",
+      "sha256": "cee8bf1a3d7890e2140d9f2ccc3db8fb6a599190833073206abf4b35fa51cea9",
+      "size_bytes": 4780
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v00_repository.py",
+      "sha256": "e2f4bce663810e727ec87a6fec99f5fa54a508602d38a0377d4232e8d060be32",
+      "size_bytes": 3806
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v01_execution_graph.py",
+      "sha256": "982ef080fe09816ba86407aae8e2bb0f083e2d9f841b0c4d5509784e52649212",
+      "size_bytes": 1336
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v02_csnnt.py",
+      "sha256": "0fb65de8c3212305b268a8ff12e6fa860f38d1dd016f6bba0d335ed217fe8488",
+      "size_bytes": 1859
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v03_three_level.py",
+      "sha256": "da91ca001a2ec149606fbfef564a647ed03452275aa80a4e20047b33075163f6",
+      "size_bytes": 914
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v04_factorial.py",
+      "sha256": "729927a9a94fa08250fdf55fa4398ebfc7bacf559644bd4ef419b8375c1e96e4",
+      "size_bytes": 1726
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v05_raw_ablation.py",
+      "sha256": "f3220fd7ab19df390fd08350a90d7bbf6c0da8af1a6693f548d4b82dc782261a",
+      "size_bytes": 1806
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v06_residual.py",
+      "sha256": "e19cacfba2edb4a62639b299d73570ef1fbf578a56c513cc21bdbc56a69d148a",
+      "size_bytes": 1073
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v07_operator_action.py",
+      "sha256": "0ccc52e072029dfd4ff8a8533208c1b4da8e4143ae195b65abda25e1e5ab3292",
+      "size_bytes": 1484
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v08_simulator_sensitivity.py",
+      "sha256": "72f56fc18fbce51f81a7db5835b79ba07a7128aaca580dac7bf68cac9cf7f7d0",
+      "size_bytes": 2429
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v09_qpu_scope.py",
+      "sha256": "0213c53423c57f4e92e92ac435a432182d1732d746393aa4dd44e2807482d321",
+      "size_bytes": 1084
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v10_competitor_fidelity.py",
+      "sha256": "89287a15dbdf93e9b82399493982a299fc96228a799ca47e38f825f401552426",
+      "size_bytes": 1399
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v11_resources.py",
+      "sha256": "06219dc0a0873e26d5566ec269451e18cd63fc6f071d151e8d00ecea98d25bc9",
+      "size_bytes": 2368
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v12_application_endpoint.py",
+      "sha256": "aabdbf5f81320fb2b885416b386b148be269e2119f7f09320578e4bfe19b1980",
+      "size_bytes": 3724
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v13_highs.py",
+      "sha256": "2e77e75a934b0c37041c4fe2871d4066745818b001024e127d33d63b04f47f7a",
+      "size_bytes": 893
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v14_statistics.py",
+      "sha256": "606faa8042fc91e5a0505775eb531dbd58c404fda10201766b06c199ae7be730",
+      "size_bytes": 1753
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v15_cost_to_target.py",
+      "sha256": "52b084d250506c18d5acb660fc358e8ac32f492581a15e107b2d283cb5cd8fca",
+      "size_bytes": 1343
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v16_provenance.py",
+      "sha256": "9f721ea4cfb1eb47dbfd5c37ad156a612da7e4fa0f73df481649a4cb6a653ecb",
+      "size_bytes": 1079
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v17_reproducibility.py",
+      "sha256": "44f25517147ee974829372468a4a8808cc90c48116bb6bad26417988fee0fa77",
+      "size_bytes": 879
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v18_claim_gate.py",
+      "sha256": "4e23eb71edba921d0872d0b1269c81d3ea911a461b9399ffe41841252e017e36",
+      "size_bytes": 1313
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "experiments_dwave/verifiers_v53/v19_external_export.py",
+      "sha256": "1551417501278c4182b674bf1383bb21ef9fc1359deb953dc1d3ff5d03b91236",
+      "size_bytes": 1265
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/__init__.py",
+      "sha256": "c1c1a70b1e052c79fa5ab2c37a1b26baa3b7c62cd3173e16124bd4e026aa1748",
+      "size_bytes": 5257
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/aer_gpu.py",
+      "sha256": "a7c00ac31a526fa2eb3820baacbe220207369532484cda53d48af4e939a088c2",
+      "size_bytes": 32287
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/circuit.py",
+      "sha256": "80d27d32fe600923944ead509a76c9ff4a43b71e60ae2c2977df61638e3dd7ed",
+      "size_bytes": 29000
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/expectation.py",
+      "sha256": "f9fa5547d3603a1cadfb30996101087fc884905d3fed8fb02069a8b2f7cf76df",
+      "size_bytes": 34598
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/objective.py",
+      "sha256": "401da061dc07fa73eb6a16257a23288df3a6ee8c494a390d0a9dce6d628eeed3",
+      "size_bytes": 30444
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/optimizer.py",
+      "sha256": "a5b4694a9db423f5ecf82fee1a5ca9694c660688314bcbb05e84c07e10a519a2",
+      "size_bytes": 40117
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/parameters.py",
+      "sha256": "3bdb96d805e6e68169c4b2ccf64ab49554e03286322a060bb8bad6181a52fa12",
+      "size_bytes": 23327
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "maqaoa/solver.py",
+      "sha256": "d6a4edfa2483a368b7628137d30b42a868797db2cf2dfdffee5d59b41a4b5233",
+      "size_bytes": 35660
+    },
+    {
+      "class": "PUBLIC_NOTEBOOK",
+      "path": "notebooks/CSSF_QA_DWave_Evidence_Simulator_v56.ipynb",
+      "sha256": "3237afad5a3dfcc90617bfb4b7bfb030e07065bbbc2667248be108914a937768",
+      "size_bytes": 97960
+    },
+    {
+      "class": "PUBLIC_NOTEBOOK",
+      "path": "notebooks/CSSF_dwave_case300.ipynb",
+      "sha256": "7bcad6f47c85d36aa61161d944c343905dc2c4055c65d6b472f3b23356a546e3",
+      "size_bytes": 200720
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "opf/__init__.py",
+      "sha256": "530ab919c29a1328c8d9a2ba9631f816748d7f8a5fda1e14c9c50dbb0b8e3908",
+      "size_bytes": 1946
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "opf/acopf.py",
+      "sha256": "cfb2aeace7827b48a7e3ada53471a4a30446bb86c6a051c9c59618611268e9f0",
+      "size_bytes": 19212
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "opf/bess_constraints.py",
+      "sha256": "179d5981352e2649e776a170d0c2789d6f074d59fcff6547d02b6c997abf1367",
+      "size_bytes": 24795
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "opf/case_loader.py",
+      "sha256": "a1d5796df0c42bede3b7311414b229b05dd6540a9b58187783c8005d8f800efb",
+      "size_bytes": 14113
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "opf/scenario_generator.py",
+      "sha256": "4f7ab2ad46f682eacb1ef49eaf19bfdd680828b4404cab97fb6a5b2f518daefa",
+      "size_bytes": 17962
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "opf/surrogate.py",
+      "sha256": "42c241fbec3f7c774f506339c8618301a132ccbd41bf16c370f220a973ebbe9a",
+      "size_bytes": 28713
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "pipeline/__init__.py",
+      "sha256": "d124de6928a545bb1605fdc0151bf0b9f1a5d5b5d05251f1f1d3a3b1c1bbfc32",
+      "size_bytes": 16900
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "pipeline/manifest.py",
+      "sha256": "fa51a643653871fccfbd0e25300290bd0d7fad7c18e6fbd5b058bcfb1332db98",
+      "size_bytes": 22895
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "pipeline/runner.py",
+      "sha256": "78e358e9b61115b88b1cbae1e2ebafbbdfb570487a064d3368d34e57fbd05154",
+      "size_bytes": 26713
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "pipeline/surrogate_selection.py",
+      "sha256": "0584e142b228a9765c78c982681ae30f1b7e5b2ed0dff523055f685b24dc3420",
+      "size_bytes": 18769
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "project_paths.py",
+      "sha256": "51b9c80f40acb3d6a724d83dacffdb2dbcf288f376136c4d6356d42c5aacdee5",
+      "size_bytes": 7531
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "pyproject.toml",
+      "sha256": "7cce367f084cbbacca37279fd68016faa04c9370d495b4b1c9ce21987460a77f",
+      "size_bytes": 3270
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/__init__.py",
+      "sha256": "173db096da47e52e54a507a3b113d590a11cb88271e35b0d9a8aee4961e7fcaa",
+      "size_bytes": 5065
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/aer_gpu.py",
+      "sha256": "85da9761c0489ad30466752131694c4ff64299b67dabaf56a869ffd99ad9d0bd",
+      "size_bytes": 27866
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/circuit.py",
+      "sha256": "944f334b27f74b73edcaf613db83a7f77d42deac0e3d31b8921af2d57a40b3db",
+      "size_bytes": 35027
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/observables.py",
+      "sha256": "b422fe1f2e70c65789bfeb2f7088095ee7a2ce084a8a37945be6fa01f8a23a2e",
+      "size_bytes": 28591
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/schedule.py",
+      "sha256": "f472d5d430f1e15806518d5184eac20051dc656dcca3e2ef892347c799c0ca24",
+      "size_bytes": 25901
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/solver.py",
+      "sha256": "47bec01b1076c914c1ea7e17b9bf82997c5f37d585bf9bac13517d7eb9bbb3b0",
+      "size_bytes": 51179
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qa/surrogate.py",
+      "sha256": "788a0e82bfcbd42046d5e4c22d5a811dca1a1e946531b7eff95a4e27f8c0bb40",
+      "size_bytes": 29725
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/__init__.py",
+      "sha256": "c6027e59dd6fcfd994593bbefc61467fbabf1cbdb848e58a8abb75e8320bac1b",
+      "size_bytes": 2770
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/aer_gpu.py",
+      "sha256": "84b26236a637d5161541ece3ad3e6da6e21ba1b35a6ef8c007efc778f777350a",
+      "size_bytes": 26010
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/circuit.py",
+      "sha256": "10ea26caca733de46a36bb3006844b0561cc46366cd3ee23e0d067bd479eb165",
+      "size_bytes": 31696
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/expectation.py",
+      "sha256": "9bb5213b6085840a96ed60f70f8e72bccaa5a2c872c3218ece757f8bc8167bff",
+      "size_bytes": 33600
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/hamiltonian.py",
+      "sha256": "066a613c20efc3c55ebe08be884c7c3a89146f2a635174814cdc7298526d2ae2",
+      "size_bytes": 28511
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/objective.py",
+      "sha256": "100a36d57f0700070e980cca0cafe926005bc1b552ba0e32efba3fef7c5933b7",
+      "size_bytes": 29666
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/optimizer.py",
+      "sha256": "a6130257b46e7ab975cea69f3e57de9da1af7e9459256218711be3ec09860182",
+      "size_bytes": 37194
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qaoa/solver.py",
+      "sha256": "94e5a61b5b995e2e533fe3665780970def586d2b77cd6c3339c30e019d30c0d9",
+      "size_bytes": 32280
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qubo/__init__.py",
+      "sha256": "62aa7819ed55afd3ddd1127f2ae6ec34893ee0ca0b8b8ef46082dff83f695838",
+      "size_bytes": 2298
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qubo/builder.py",
+      "sha256": "66d17e4168ee9f076089536609c628d05397fb5dba300bc574ce2760da2c624d",
+      "size_bytes": 21148
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qubo/encoding.py",
+      "sha256": "9f28f6c7bc85362a20a245c253ec62756e26979b2e0584f98ebd25f9150ed073",
+      "size_bytes": 14581
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qubo/model.py",
+      "sha256": "3647659dc364ea5117b0f945e1c633ccf3ba604b544bd07f370f4c24b6e3b005",
+      "size_bytes": 20436
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "qubo/penalties.py",
+      "sha256": "6dd8d0b774d53f893a41f22f0e895f1b84c541e2f110744f348ccf58956aa13e",
+      "size_bytes": 12470
+    },
+    {
+      "class": "RELEASE_METADATA",
+      "path": "releases/RELEASE_PROFILE_v62.json",
+      "sha256": "5d78f4feb86b29e129920a40a9d91d3a40cebbc31f7a20bd80cbd321299aebe7",
+      "size_bytes": 335
+    },
+    {
+      "class": "RELEASE_METADATA",
+      "path": "releases/scientific_manifests/ACTIVE_RELEASE_INVENTORY_v62.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    {
+      "class": "RELEASE_METADATA",
+      "path": "releases/scientific_manifests/ANALYTICAL_GEOMETRY_CERTIFICATE_v56.json",
+      "sha256": "392f366cc484bba35b2bb4f87fa3b9190f261dcc301b0e9af2c889161d7dbac1",
+      "size_bytes": 6066
+    },
+    {
+      "class": "RELEASE_METADATA",
+      "path": "releases/scientific_manifests/FROZEN_INPUT_MANIFEST_v51.json",
+      "sha256": "b6f10a153f0e6ea16b787a59fb02030721e05c382238c580ac53c03d051a954a",
+      "size_bytes": 663
+    },
+    {
+      "class": "RELEASE_METADATA",
+      "path": "releases/scientific_manifests/FROZEN_SOURCE_MANIFEST_v51.json",
+      "sha256": "cab1d6473d411e04ca922d402db07efc428a7a6ff4c7b44cf9e6e2385ae9cc71",
+      "size_bytes": 6626
+    },
+    {
+      "class": "RELEASE_METADATA",
+      "path": "releases/scientific_manifests/LOCKED_RUNTIME_MANIFEST_v62.json",
+      "sha256": "ac03108119a4b31856c3d30f0fc7fad85ddff56f989ec017113e1f41cdc9954a",
+      "size_bytes": 26873
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "requirements-case300.txt",
+      "sha256": "4e40f920ac94ccafa751b2e16f584284c58301fe4794a941adb5e5729d0bd311",
+      "size_bytes": 188
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "requirements-colab.txt",
+      "sha256": "b3cbe30ae0504c80c13367aee10e75e916bbb462dc8bf5dabadaa7d5f25e9ee3",
+      "size_bytes": 4162
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "spectral/__init__.py",
+      "sha256": "133a3ae93882aa4abe76ec3f721ce0d1c762ae2bfa5994340037d14307dbd425",
+      "size_bytes": 1757
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "spectral/feature_matrix.py",
+      "sha256": "554cbbabc15e59dfc514e343dbcccd8484494878f26f458f99b7c3bdb1a85de6",
+      "size_bytes": 11564
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "spectral/frequency_support.py",
+      "sha256": "3ad18071f6be7f4b961737ba8027ab03faa730b89202ca767fe7bd66877b3e7c",
+      "size_bytes": 14092
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "spectral/residual_surrogate.py",
+      "sha256": "2a2212b72e7b1b2df31fd8a22b778cae8825e9c3763cbc7b25d9dbeb041621c2",
+      "size_bytes": 15490
+    },
+    {
+      "class": "PUBLIC_RUNTIME",
+      "path": "spectral/target_transforms.py",
+      "sha256": "f30361e0f13aa8690fd9072a381010aff4ef40a625696d1ed0feb42ae2aa9f16",
+      "size_bytes": 17112
+    },
+    {
+      "class": "PUBLIC_TEST",
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "class": "PUBLIC_TEST",
+      "path": "tests/test_release_integrity_v62.py",
+      "sha256": "1f2c0e7279d203a996e847f413e192c22113ff85dfc121e0d8d1ad46e0acecf4",
+      "size_bytes": 11291
+    }
+  ]
+}

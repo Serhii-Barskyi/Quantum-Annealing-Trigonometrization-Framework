@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+# Author: Serhii Barskyi | https://www.linkedin.com/in/serhii-barskyi/
+# Data Science Course: https://preply.com/en/tutor/7756455
+# Framework: Complex Spectral Surrogate Framework (CSSF)
+#
+# Licensed under the Apache License, Version 2.0.
+# You may not use this file except in compliance with the License.
+# Full license text: https://www.apache.org/licenses/LICENSE-2.0
+#
+# Attribution required: if you use this code, please cite:
+# Serhii Barskyi, Complex Spectral Surrogate Framework (CSSF),
+# https://www.linkedin.com/in/serhii-barskyi/
+
+# Google Colab GPU environment only.
+#
+# Canonical project root:
+#   /content/drive/MyDrive/cssf_dwave
+#
+# IMPORTANT:
+# - Target runtime: Google Colab, CPython 3.12, Linux x86_64, CUDA 12.
+# - Run the installation cell once, then manually select Runtime -> Restart session.
+# - qiskit-aer-gpu is the only permitted Aer distribution for GPU QAOA/MA-QAOA.
+# - Do not install the CPU-only qiskit-aer distribution separately.
+# - No CPU fallback is permitted for the full CSSF-QA GPU experiment.
+
+# -----------------------------------------------------------------------------
+# Colab compatibility layer
+# -----------------------------------------------------------------------------
+# The Colab host currently supplies an exact pandas pin inside the tested 2.2.x window.
+# The notebook reads google-colab package metadata and installs that exact host pin;
+# this requirements file therefore constrains pandas to the validated minor window only.
+# numba 0.60.0 requires numpy>=1.22,<2.1 in the observed Colab runtime.
+# jedi is an editor/runtime helper and is not a post-restart scientific gate.
+numpy==2.0.2
+pandas>=2.2.2,<2.3
+jedi>=0.19,<0.20  # optional editor helper; absence after restart is not a scientific gate
+packaging>=25,<27
+
+# -----------------------------------------------------------------------------
+# QAOA / MA-QAOA / digitized-QA simulation on NVIDIA GPU
+# -----------------------------------------------------------------------------
+# Exact statevector is used only up to 22 qubits.
+# Full 80-qubit QAOA/MA-QAOA references use Aer tensor_network/cuTensorNet.
+qiskit==1.2.4
+qiskit-algorithms==0.3.1
+qiskit-aer-gpu==0.15.1
+
+# -----------------------------------------------------------------------------
+# D-Wave Ocean SDK and Pegasus-compatible tooling
+# -----------------------------------------------------------------------------
+dwave-ocean-sdk==9.4.0
+
+# -----------------------------------------------------------------------------
+# Power-system modelling and BESS AC validation
+# -----------------------------------------------------------------------------
+# pandapower 3.2.2 is selected because its declared dependency family
+# (numpy~=2.0, pandas~=2.2, scipy~=1.13, networkx~=3.2, packaging~=25.0)
+# is compatible with the observed Google Colab Python 3.12 base environment.
+pandapower==3.2.2
+
+# -----------------------------------------------------------------------------
+# MILP / LP / convex-QP quality reference
+# -----------------------------------------------------------------------------
+highspy==1.15.1
+pyomo>=6.9,<7
+
+# -----------------------------------------------------------------------------
+# Numerical, ML, and experiment data stack
+# -----------------------------------------------------------------------------
+scipy>=1.13,<2
+networkx>=3.2,<4
+scikit-learn>=1.5,<2
+joblib>=1.4,<2
+tqdm>=4.67,<5
+
+# -----------------------------------------------------------------------------
+# Configuration and validation
+# -----------------------------------------------------------------------------
+PyYAML>=6.0.2,<7
+pydantic>=2.8,<3
+typing-extensions>=4.12,<5
+
+# -----------------------------------------------------------------------------
+# Experiment analysis and visualization
+# -----------------------------------------------------------------------------
+matplotlib>=3.9,<4
+
+# -----------------------------------------------------------------------------
+# Columnar experiment artifacts
+# -----------------------------------------------------------------------------
+pyarrow>=17,<23
+
+# Full pytest is completed before delivery and is not repeated in Colab.

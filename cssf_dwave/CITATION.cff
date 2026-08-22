@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "CSSF(QA): Complex Spectral Surrogate Framework for Quantum Annealing"
+message: "If you use this software, please cite this project and, when applicable, the related monograph Quantum Annealing Trigonometrization."
+type: software
+authors:
+  - family-names: "Barskyi"
+    given-names: "Serhii"
+license: Apache-2.0
+abstract: "Physics-informed complex-spectral surrogate framework for D-Wave-oriented quantum annealing, BESS placement, response identification, and fail-closed evidence workflows."

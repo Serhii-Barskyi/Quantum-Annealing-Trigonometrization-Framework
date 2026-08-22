@@ -1,0 +1,11 @@
+{
+  "count": 5,
+  "files": {
+    "LICENSE": "f6be00cbc064dbc76a48a60590a69743c470e86102b42535d41f7e7c317b0a7b",
+    "calibration/09-1263A-C_Advantage_system4_annealing_schedule.xlsx": "03350bb86bab2f752697e1a8c37f3e4c2100c6596d0f6c6bf8f6d2e3e97de4f1",
+    "calibration/09-1273A-F_Advantage_system6_annealing_schedule.xlsx": "d266ee71c8a0611cc392781da4df65e20969aed658b5df60453ac099202fdc06",
+    "core/frozen_manifest.json": "2b8e0630a4c042e95007a12f5b9f32be2020a3a60ca9362a9a4ff8178ec98cfe",
+    "data/case300_full_modeA_Barskyi_Serhii.json": "2764826242d9f9ecfdc6e8f0d78a8cac452c39b9091ed84a74f1771e6df52539"
+  },
+  "schema": "CSSF-FROZEN-INPUT-MANIFEST-v51"
+}

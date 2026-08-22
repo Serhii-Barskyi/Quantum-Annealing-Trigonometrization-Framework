@@ -1,0 +1,77 @@
+# -*- coding: utf-8 -*-
+# Author: Serhii Barskyi | https://www.linkedin.com/in/serhii-barskyi/
+# Data Science Course: https://preply.com/en/tutor/7756455
+# Framework: Complex Spectral Surrogate Framework (CSSF)
+#
+# Licensed under the Apache License, Version 2.0.
+# You may not use this file except in compliance with the License.
+# Full license text: https://www.apache.org/licenses/LICENSE-2.0
+#
+# Attribution required: if you use this code, please cite:
+# Serhii Barskyi, Complex Spectral Surrogate Framework (CSSF),
+# https://www.linkedin.com/in/serhii-barskyi/
+
+# Google Colab GPU emulator overrides.
+#
+# Load after:
+#   config/base.yaml
+#   config/case300.yaml
+#
+# The backend name "local_sqa_gpu" means "non-QPU emulator".
+# It is still executed exclusively inside Google Colab.
+
+project:
+  root: /content/drive/MyDrive/cssf_dwave
+  execution_environment: google_colab
+  strict_no_fallbacks: true
+
+runtime:
+  require_gpu: true
+  require_cuda: true
+  statevector_provider: qiskit_aer_gpu
+  aer_method: statevector
+  aer_device: GPU
+  fail_if_gpu_unavailable: true
+  install_from: /content/drive/MyDrive/cssf_dwave/requirements-colab.txt
+
+qaoa:
+  statevector_provider: qiskit_aer_gpu
+  aer_method: statevector
+  aer_device: GPU
+  shots: 4096
+
+maqaoa:
+  statevector_provider: qiskit_aer_gpu
+  aer_method: statevector
+  aer_device: GPU
+  shots: 4096
+
+qa:
+  schedule_mapping: qa_to_maqaoa
+  trotter_slices: 96
+  trotter_order: 2
+  total_annealing_time: 20.0
+  schedule_points: 151
+  verify_trotter_convergence: true
+
+emulator:
+  backend: local_sqa_gpu
+  num_reads: 8192
+  return_dimod_sampleset: true
+  topology_type: pegasus
+  pegasus_m: 16
+  require_gpu: true
+  allow_classical_fallback: false
+  sqa_trotter_replicas: 96
+  sqa_sweeps: 4000
+  sqa_burn_in_sweeps: 1000
+
+qpu:
+  enabled: false
+  backend: pegasus_qpu
+  topology_type: pegasus
+  solver_id: null
+  require_explicit_solver_id: true
+  reject_zephyr: true
+  allow_solver_fallback: false
+  dry_run: true

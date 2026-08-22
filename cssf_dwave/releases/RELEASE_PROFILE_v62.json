@@ -1,0 +1,10 @@
+{
+  "schema": "CSSF-RELEASE-PROFILE-v62",
+  "date": "2026-08-22",
+  "profile": "PUBLIC_GITHUB_RELEASE",
+  "canonical_root": "cssf_dwave/",
+  "canonical_colab_root": "/content/drive/MyDrive/cssf_dwave",
+  "notebook_count": 2,
+  "language_policy": "ENGLISH_ONLY_PUBLIC_REPOSITORY",
+  "monograph_policy": "PAID_MONOGRAPH_EXTERNAL_ONLY"
+}

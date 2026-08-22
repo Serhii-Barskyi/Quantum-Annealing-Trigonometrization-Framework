@@ -1,0 +1,185 @@
+{
+  "annealer_calls_used": 0,
+  "cssf_initial_design_sha256": "8e34abd903d65e09461eb868e70b17b5dc64a2c4fa7f65c6e539b1263278dff7",
+  "director_design_geometry": {
+    "pairwise_1": {
+      "condition_gram_2": 24150.371006562335,
+      "condition_phi_2": 155.40389636901648,
+      "features": 513,
+      "full_column_rank": true,
+      "rank": 513,
+      "rows": 1400,
+      "sigma_max": 96.21785217389123,
+      "sigma_min": 0.6191469739305364
+    },
+    "signed_axes_1": {
+      "condition_gram_2": 143.78612614352053,
+      "condition_phi_2": 11.991085277968827,
+      "features": 33,
+      "full_column_rank": true,
+      "rank": 33,
+      "rows": 1400,
+      "sigma_max": 70.83344986508413,
+      "sigma_min": 5.907175891345394
+    },
+    "total_l1_2": {
+      "condition_gram_2": 51202.38213095075,
+      "condition_phi_2": 226.27943373568675,
+      "features": 545,
+      "full_column_rank": true,
+      "rank": 545,
+      "rows": 1400,
+      "sigma_max": 108.9039868916858,
+      "sigma_min": 0.48128097677182075
+    },
+    "train_controls": 1400
+  },
+  "director_full_design_sha256": "3efb3608d334434db87f68cd5a753c45f22a13e679c8d458f37b8d02c1e033d0",
+  "director_train_design_sha256": "990342513023f7f5921e8919570c8d330da1329869b7e79887ea6ffabe03a739",
+  "factorial_causal_completeness": {
+    "estimands": [
+      "intercept",
+      "application_trig_effect",
+      "operator_action_effect",
+      "interaction"
+    ],
+    "full_rank": true,
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "parameters": 4,
+    "rank": 4
+  },
+  "operator_action": {
+    "families": {
+      "Advantage_system4": {
+        "condition_gram_2": 324.25391622799935,
+        "condition_phi_2": 18.007051847206867,
+        "condition_times_machine_epsilon": 3.998368713277604e-15,
+        "coordinate_span_max": 350274.2231889341,
+        "coordinate_span_median": 148493.67095484555,
+        "coordinate_span_min": 49.621430014612095,
+        "features": 33,
+        "features_le_half_train": true,
+        "full_column_rank": true,
+        "gram_eigen_max": 4.26612796416223,
+        "gram_eigen_min": 0.013156750776642892,
+        "max_column_coherence": 0.9344420539619931,
+        "rank": 33,
+        "rows": 66,
+        "sigma_max": 16.779882169869587,
+        "sigma_min": 0.9318506056543825
+      },
+      "Advantage_system6": {
+        "condition_gram_2": 406.30282686644955,
+        "condition_phi_2": 20.156954801418152,
+        "condition_times_machine_epsilon": 4.4757430653726065e-15,
+        "coordinate_span_max": 342684.30545816076,
+        "coordinate_span_median": 136114.86208226133,
+        "coordinate_span_min": 50.71788384402481,
+        "features": 33,
+        "features_le_half_train": true,
+        "full_column_rank": true,
+        "gram_eigen_max": 4.069456749659654,
+        "gram_eigen_min": 0.010015821895812878,
+        "max_column_coherence": 0.9335373364996288,
+        "rank": 33,
+        "rows": 66,
+        "sigma_max": 16.38853701455799,
+        "sigma_min": 0.8130462748968891
+      }
+    },
+    "forecast": {
+      "basis": "full-rank first-order design with strong numerical separation",
+      "cssf_response_identifiability_forecast": "HIGH",
+      "not_a_gpu_outcome_prediction": true,
+      "one_hit_95_probability_threshold": 0.005833955600556329,
+      "rare_event_resolution_note": "Events substantially rarer than the reported one-hit threshold may remain unseen at one control; absence of hits must not be interpreted as zero probability."
+    },
+    "primary_family": "Advantage_system6"
+  },
+  "protocol": {
+    "alpha": 0.3,
+    "annealing_time_range_us": [
+      5.0,
+      50.0
+    ],
+    "cssf_initial_calibration": 6,
+    "cssf_initial_train": 66,
+    "order": 4,
+    "reads_per_control": 512,
+    "seed": 20260817,
+    "total_control_budget": 96,
+    "turbo_max_reads": 900,
+    "turbo_min_reads": 250
+  },
+  "raw_control": {
+    "forecast": {
+      "basis": "full-rank first-order design with strong numerical separation",
+      "cssf_response_identifiability_forecast": "HIGH",
+      "not_a_gpu_outcome_prediction": true,
+      "one_hit_95_probability_threshold": 0.005833955600556329,
+      "rare_event_resolution_note": "Events substantially rarer than the reported one-hit threshold may remain unseen at one control; absence of hits must not be interpreted as zero probability."
+    },
+    "geometry": {
+      "condition_gram_2": 6.791558110289352,
+      "condition_phi_2": 2.6060618009343814,
+      "condition_times_machine_epsilon": 5.786619629986903e-16,
+      "coordinate_span_max": 6.1271775336095216,
+      "coordinate_span_median": 5.994481693147261,
+      "coordinate_span_min": 5.917458720972058,
+      "features": 11,
+      "features_le_half_train": true,
+      "full_column_rank": true,
+      "gram_eigen_max": 2.167306941374163,
+      "gram_eigen_min": 0.3191177791868773,
+      "max_column_coherence": 0.3441283346189367,
+      "rank": 11,
+      "rows": 66,
+      "sigma_max": 11.960027513793381,
+      "sigma_min": 4.589310779009621
+    }
+  },
+  "sampling_resolution": {
+    "controls_per_arm": 96,
+    "event_hit_probability_one_control": {
+      "0.001": 0.4008577145704786,
+      "0.002": 0.6412126362065429,
+      "0.005": 0.9231900748653746,
+      "0.01": 0.9941760232313364,
+      "0.02": 0.999967807792782
+    },
+    "minimum_event_probability_for_95pct_chance_of_at_least_one_hit": 0.005833955600556329,
+    "reads_per_control": 512,
+    "total_reads_per_fixed_read_arm": 49152,
+    "worst_case_95pct_halfwidth_arm_mean_difference": 0.006251301947727902,
+    "worst_case_bernoulli_se_one_control": 0.02209708691207961,
+    "zero_hits_upper95_probability": 0.005833955600556329
+  },
+  "schema": "CSSF-QA-ANALYTICAL-GEOMETRY-CERTIFICATE-v56",
+  "source_exact_svd_preflight": "CSSF_QA_ANALYTICAL_PREFLIGHT_v55.json",
+  "validated_exact_svd": true
+}

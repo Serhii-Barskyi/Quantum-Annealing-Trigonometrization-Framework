@@ -1,0 +1,147 @@
+# -*- coding: utf-8 -*-
+# Author: Serhii Barskyi | https://www.linkedin.com/in/serhii-barskyi/
+# Data Science Course: https://preply.com/en/tutor/7756455
+# Framework: Complex Spectral Surrogate Framework (CSSF)
+#
+# Licensed under the Apache License, Version 2.0.
+# You may not use this file except in compliance with the License.
+# Full license text: https://www.apache.org/licenses/LICENSE-2.0
+#
+# Attribution required: if you use this code, please cite:
+# Serhii Barskyi, Complex Spectral Surrogate Framework (CSSF),
+# https://www.linkedin.com/in/serhii-barskyi/
+
+schema_version: "1.0"
+
+project:
+  name: cssf-qa-dwave
+  root: /content/drive/MyDrive/cssf_dwave
+  execution_environment: google_colab
+  strict_no_fallbacks: true
+  quantum_walk_enabled: false
+
+runtime:
+  require_gpu: true
+  require_cuda: true
+  statevector_provider: qiskit_aer_gpu
+  aer_method: statevector
+  aer_device: GPU
+  fail_if_gpu_unavailable: true
+  install_from: /content/drive/MyDrive/cssf_dwave/requirements-colab.txt
+
+random:
+  global_seed: 42
+  scenario_seed: 101
+  qaoa_seed: 202
+  maqaoa_seed: 303
+  qa_seed: 404
+  sampler_seed: 505
+
+opf:
+  network_case: case300
+  train_scenarios: 400
+  validation_scenarios: 100
+  ood_scenarios: 100
+  train_load_scale_min: 0.85
+  train_load_scale_max: 1.15
+  ood_load_scale_min: 1.32
+  ood_load_scale_max: 1.50
+  require_ac_convergence: true
+  finite_difference_step_mw: 0.001
+
+qubo:
+  candidate_count: 80
+  bess_units: 15
+  enforce_exact_cardinality: true
+  verify_qubo_ising_tolerance: 1.0e-10
+  preserve_argmin_after_scaling: true
+  coefficient_range_linear: 2.0
+  coefficient_range_quadratic: 1.0
+
+qaoa:
+  enabled: true
+  role: qa_modeling_and_regression
+  independently_surrogated: false
+  depth: 1
+  training_points: 60
+  shots: 4096
+  statevector_provider: qiskit_aer_gpu
+  aer_method: statevector
+  aer_device: GPU
+  weighted_lsf_mixer: true
+
+maqaoa:
+  enabled: true
+  role: qa_coordinate_decomposition_and_regression
+  independently_surrogated: false
+  depth: 1
+  training_points: 120
+  shots: 4096
+  statevector_provider: qiskit_aer_gpu
+  aer_method: statevector
+  aer_device: GPU
+  termwise_mixer_angles: true
+  termwise_linear_cost_angles: true
+  termwise_quadratic_cost_angles: true
+  require_tied_angle_qaoa_equivalence: true
+
+qa:
+  enabled: true
+  surrogated_system: quantum_annealing_response
+  coordinate_model: maqaoa_decomposition
+  schedule_mapping: qa_to_maqaoa
+  trotter_slices: 64
+  trotter_order: 2
+  total_annealing_time: 20.0
+  schedule_points: 101
+  verify_trotter_convergence: true
+  targets:
+    - mean_energy
+    - energy_variance
+    - energy_quantile_05
+    - cvar_05
+    - feasibility_probability
+    - elite_probability
+    - success_probability
+
+emulator:
+  backend: local_sqa_gpu
+  num_reads: 4096
+  return_dimod_sampleset: true
+  topology_type: pegasus
+  pegasus_m: 16
+  require_gpu: true
+  allow_classical_fallback: false
+  sqa_trotter_replicas: 64
+  sqa_sweeps: 2000
+  sqa_burn_in_sweeps: 500
+
+qpu:
+  enabled: false
+  backend: pegasus_qpu
+  topology_type: pegasus
+  allowed_solver_prefixes:
+    - Advantage_system4.
+    - Advantage_system6.
+  solver_id: null
+  require_explicit_solver_id: true
+  reject_zephyr: true
+  allow_solver_fallback: false
+  dry_run: true
+  num_reads: 4096
+  annealing_time: 20.0
+
+benchmark:
+  baseline_solver: highs
+  surrogated_system: quantum_annealing_response
+  compare_solution_quality: true
+  compare_qa_surrogate_approximation: true
+  compare_same_objective: true
+  compare_same_constraints: true
+  compare_wall_clock: false
+  runtime_role: diagnostic_only
+  ac_post_verify_both_methods: true
+  use_ood_scenarios: true
+  bootstrap_samples: 2000
+  confidence_level: 0.95
+  require_positive_ac_advantage_ci: true

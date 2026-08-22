@@ -1,0 +1,150 @@
+# -*- coding: utf-8 -*-
+# Author: Serhii Barskyi | https://www.linkedin.com/in/serhii-barskyi/
+# Data Science Course: https://preply.com/en/tutor/7756455
+# Framework: Complex Spectral Surrogate Framework (CSSF)
+#
+# Licensed under the Apache License, Version 2.0.
+# You may not use this file except in compliance with the License.
+# Full license text: https://www.apache.org/licenses/LICENSE-2.0
+#
+# Attribution required: if you use this code, please cite:
+# Serhii Barskyi, Complex Spectral Surrogate Framework (CSSF),
+# https://www.linkedin.com/in/serhii-barskyi/
+
+[build-system]
+requires = ["setuptools>=75", "wheel>=0.44"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cssf-qa-dwave"
+version = "0.1.0"
+description = "Complex Spectral Surrogate Framework for BESS placement and Pegasus-compatible quantum annealing research."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Serhii Barskyi" }
+]
+keywords = [
+    "CSSF",
+    "CSNN-T",
+    "BESS",
+    "QAOA",
+    "MA-QAOA",
+    "quantum annealing",
+    "D-Wave",
+    "Pegasus",
+    "Ocean SDK",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+
+[tool.setuptools]
+include-package-data = true
+py-modules = ["project_paths"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "config*",
+    "core*",
+    "spectral*",
+    "opf*",
+    "qubo*",
+    "qaoa*",
+    "maqaoa*",
+    "qa*",
+    "dwave_backend*",
+    "bess*",
+    "baselines*",
+    "pipeline*",
+    "experiments_dwave*",
+    "benchmarks*",
+    "case300_compat*",
+]
+exclude = [
+    "tests*",
+    "notebooks*",
+    "data*",
+    "outputs*",
+    "results*",
+    "logs*",
+    "models*",
+    "checkpoints*",
+    "cache*",
+    "artifacts*",
+    "embeddings*",
+    "samplesets*",
+    "solver_metadata*",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.3"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-ra",
+    "--strict-config",
+    "--strict-markers",
+]
+markers = [
+    "colab_gpu: requires a Google Colab GPU runtime",
+    "aer_gpu: requires qiskit-aer-gpu",
+    "ocean: requires D-Wave Ocean SDK",
+    "pegasus: requires Pegasus topology support",
+    "slow: long-running integration or benchmark test",
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+    "config",
+    "core",
+    "spectral",
+    "opf",
+    "qubo",
+    "qaoa",
+    "maqaoa",
+    "qa",
+    "dwave_backend",
+    "bess",
+    "baselines",
+    "pipeline",
+    "experiments_dwave",
+    "benchmarks",
+    "case300_compat",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "if __name__ == .__main__.:",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+extend-exclude = [
+    "notebooks",
+    "data",
+    "outputs",
+    "results",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

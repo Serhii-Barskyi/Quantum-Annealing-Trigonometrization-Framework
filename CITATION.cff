@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Quantum Annealing Trigonometrization Framework — CSSF(QA)"
+message: "If you use this software, please cite this project and, when applicable, the related monograph Quantum Annealing Trigonometrization."
+type: software
+authors:
+  - family-names: "Barskyi"
+    given-names: "Serhii"
+license: Apache-2.0
+version: "v62"
+date-released: "2026-08-22"
+repository-code: "https://github.com/Serhii-Barskyi/Quantum-Annealing-Trigonometrization-Framework"
+url: "https://github.com/Serhii-Barskyi/Quantum-Annealing-Trigonometrization-Framework"
+abstract: "CSSF(QA), a quantum-annealing specialization of the Complex Spectral Surrogate Framework, for quantum-annealing trigonometrization, calibration-resolved response identification, D-Wave QPU experiments, GPU-SQA validation, and application-aware physical confirmation."

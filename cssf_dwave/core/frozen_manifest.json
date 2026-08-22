@@ -1,0 +1,42 @@
+{
+  "manifest_version": "1.0",
+  "framework": "Complex Spectral Surrogate Framework (CSSF)",
+  "author": "Serhii Barskyi",
+  "project_root": "/content/drive/MyDrive/cssf_dwave",
+  "hash_algorithm": "sha256",
+  "frozen_core_policy": {
+    "theoretical_origin": "Aizenberg CSNN-T legacy theory",
+    "files_are_immutable": true,
+    "copy_mode": "byte_for_byte",
+    "extensions_location": "core/csnn_t_adapter.py",
+    "monkey_patching_allowed": false,
+    "automatic_reformatting_allowed": false,
+    "line_ending_conversion_allowed": false
+  },
+  "files": {
+    "gcv.py": {
+      "destination": "/content/drive/MyDrive/cssf_dwave/core/gcv.py",
+      "uploaded_source_name": "gcv(2).py",
+      "sha256": "3a4f4298a65d486269c6d4657d21f98f864b590e869fe80eefe2e9cdbb4c8ff7",
+      "size_bytes": 6495,
+      "line_count": 173,
+      "encoding": "utf-8",
+      "newline": "LF",
+      "immutable": true,
+      "copy_policy": "byte_for_byte",
+      "modification_allowed": false
+    },
+    "csnn_t.py": {
+      "destination": "/content/drive/MyDrive/cssf_dwave/core/csnn_t.py",
+      "uploaded_source_name": "csnn_t(1).py",
+      "sha256": "afcc08ebd3237ec722669b703f2b8087e457d07d43655823988d60ce7c87d8c8",
+      "size_bytes": 4965,
+      "line_count": 145,
+      "encoding": "utf-8",
+      "newline": "LF",
+      "immutable": true,
+      "copy_policy": "byte_for_byte",
+      "modification_allowed": false
+    }
+  }
+}
