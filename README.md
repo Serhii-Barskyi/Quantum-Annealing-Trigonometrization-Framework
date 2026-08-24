@@ -206,7 +206,7 @@ $$
 
 ## 🧩 Industry optimization use cases
 
-These examples cover discrete and combinatorial optimization problems that can be formulated for the D-Wave quantum-classical stack using quantum annealing, QUBO / Ising models, and hybrid CQM / nonlinear solvers. Repeated industry references are consolidated below so that each sector appears only once.
+These examples cover discrete and combinatorial optimization problems that can be formulated for the D-Wave quantum-classical stack using quantum annealing, QUBO / Ising models, and hybrid CQM / nonlinear solvers. 
 
 - **Energy, utilities, and power systems:** unit commitment; BESS siting, sizing, and charge/discharge scheduling; microgrid coordination; generation-reserve allocation; grid observability and islanding; maintenance scheduling; robust post-fault restoration; and multi-objective optimization of CAPEX, losses, voltage deviation, risk, and reliability. [D-Wave Documentation - Beginner Industrial Optimization Examples](https://docs.dwavequantum.com/en/latest/industrial_optimization/index_examples_beginner.html)
 
