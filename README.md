@@ -1,5 +1,7 @@
 # ⚛️ Quantum Annealing Trigonometrization Framework
 
+![D-Wave Advantage Pegasus QPU](https://raw.githubusercontent.com/Serhii-Barskyi/Quantum-Annealing-Trigonometrization-Framework/main/pegasus.png)
+
 **CSSF(QA)** is the quantum-annealing specialization of the [Complex Spectral Surrogate Framework (CSSF)](https://github.com/Serhii-Barskyi/CSSF-Complex-Spectral-Surrogate-Framework), extending its complex-Hermitian spectral modeling line to quantum-annealing trigonometrization, calibration-resolved response identification, surrogate modeling, and D-Wave QPU / GPU-SQA experiments.
 
 Its complex-Hermitian core develops from the Aizenberg MVN/MLMVN complex-valued neural-network line and is extended here to physically structured quantum-annealing control and response spaces.
