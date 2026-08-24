@@ -100,7 +100,7 @@ QPU distribution
 
 The preserved real-D-Wave case300 protocol produced the following downstream results:
 
-| BESS budget | Metric | CSSF(QA) / D-Wave | HiGHS reference |
+| BESS budget | Metric | CSSF(QA D-Wave) | HiGHS reference |
 |---:|---|---:|---:|
 | 2 | Mean AC loss reduction | **7.0608 MW** | 5.4441 MW |
 | 2 | Mean OOD | **9.9588 MW** | 7.7255 MW |
@@ -129,7 +129,7 @@ CSSF(QA) is intended for problems where the cost of discovering a good control i
 
 The framework is deliberately **fail-closed**. If the surrogate, fidelity, data, hardware, or physical-validation gate is not passed, the corresponding claim remains blocked.
 
-The currently frozen hardware-validation pair is Pegasus `Advantage_system4` / `Advantage_system6`. A later port to current-generation Advantage2/Zephyr infrastructure is a downstream product-validation path, not a result claimed by this release.
+The currently frozen hardware-validation pair is Pegasus `Advantage_system4` / `Advantage_system6`. 
 
 ---
 
@@ -155,9 +155,9 @@ quantum response
 
 The repository intentionally contains **two different notebooks**. Their evidence must not be conflated.
 
-### 1. `CSSF_dwave_case300.ipynb` — Monograph / Real-QPU Evidence
+### 1. `CSSF_dwave_case300.ipynb` - Monograph / Real-QPU Evidence
 
-This is the public security- and path-normalized execution adaptation of the case300 notebook associated with the monograph. It preserves the scope of the historical hardware protocol:
+This is the public execution adaptation of the case300 notebook associated with the monograph. 
 
 ```text
 case300 AC data → CSNN-T → candidate screening → QUBO/Ising
@@ -167,7 +167,7 @@ case300 AC data → CSNN-T → candidate screening → QUBO/Ising
 
 **[Open the case300 notebook](cssf_dwave/notebooks/CSSF_dwave_case300.ipynb)**
 
-### 2. `CSSF_QA_DWave_Evidence_Simulator_v56.ipynb` — Scalable Framework Evidence
+### 2. `CSSF_QA_DWave_Evidence_Simulator_v56.ipynb` - Scalable Framework Evidence
 
 This is the separate scalable CSSF(QA) validation program: analytical CPU preflight, Pegasus-constrained GPU/SQA, matched control competitors, independent production confirmation, residual/transfer experiments, and application gates.
 
@@ -183,10 +183,10 @@ real-QPU case300 evidence != GPU/SQA framework evidence
 
 The same representation-and-control principle is being investigated across four application families:
 
-**case300 BESS / AC** — preserved physical reference;  
-**IEEE-33 resilience** — loss-to-resilience transfer and resilience-aware formulation;  
-**Few-FEM outer-rotor BLDC** — periodic electromagnetic surrogate plus discrete manufacturable design;  
-**EEG phase / microstate syntax** — native analytic phase plus separately validated discrete syntax.
+**case300 BESS / AC** - preserved physical reference;  
+**IEEE-33 resilience** - loss-to-resilience transfer and resilience-aware formulation;  
+**Few-FEM outer-rotor BLDC** - periodic electromagnetic surrogate plus discrete manufacturable design;  
+**EEG phase / microstate syntax** - native analytic phase plus separately validated discrete syntax.
 
 The last three are **validation programs, not completed application-evidence claims** in this public release.
 
@@ -199,6 +199,44 @@ CSSF(QA) is most natural when a problem has genuine periodic/phase/cyclic geomet
 $$
 \boxed{\text{CSSF(QA)}=\text{physics-informed trigonometrization}+\text{response intelligence}+\text{quantum portfolio}+\text{physical confirmation}}
 $$
+
+---
+
+## 🧩 Industry optimization use cases
+
+These examples cover discrete and combinatorial optimization problems that can be formulated for the D-Wave quantum-classical stack using [quantum annealing](https://docs.dwavequantum.com/en/latest/quantum_research/quantum_annealing_intro.html), [QUBO / Ising models](https://docs.dwavequantum.com/en/latest/quantum_research/qubo_ising.html), and [hybrid CQM / nonlinear solvers](https://docs.dwavequantum.com/en/latest/industrial_optimization/index_hybrid.html). Repeated industry references are consolidated below so that each sector appears only once.
+
+- **Energy, utilities, and power systems:** unit commitment; BESS siting, sizing, and charge/discharge scheduling; microgrid coordination; generation-reserve allocation; grid observability and islanding; maintenance scheduling; robust post-fault restoration; and multi-objective optimization of CAPEX, losses, voltage deviation, risk, and reliability.
+
+- **Manufacturing and industrial operations:** production-process configuration; lot sizing; Job-Shop and Flow-Shop scheduling; industrial-robot and AGV coordination; assignment of jobs to equipment; production-cell formation; batch and flow planning; line activation and output planning; predictive-maintenance feature selection; and optimization under uncertain demand or equipment failures.
+
+- **Logistics, supply chain, and warehousing:** vehicle routing; fleet sizing; container-operation sequencing; courier and order assignment; warehouse and distribution-center location; bin packing and load consolidation; inventory optimization; spare-parts logistics; multi-echelon supply-chain planning; and robust planning under supplier disruption or shortage risk.
+
+- **Telecommunications and wireless networks:** 4G/5G network configuration; channel, spectrum, and bandwidth allocation; base-station selection for coverage; interference-free transmitter or link selection; edge-node and data-center placement; network partitioning; and graph-coloring formulations for frequency assignment.
+
+- **Transportation, mobility, and aviation:** aircraft, flight, and crew scheduling; aircraft-to-flight assignment; baggage and cargo allocation; last-mile and field-service routing; public-transport and rail scheduling; road-network partitioning; time-slot allocation for conflicting operations; and schedules designed to remain feasible under delays or asset unavailability.
+
+- **Healthcare and life sciences:** physician and nurse rostering; staffing-level optimization; assignment of patients to beds and procedures; operating-room, equipment, and personnel allocation; healthcare-facility location; medical-inventory planning; biomarker feature selection; donor-recipient matching; and constrained clinical scheduling.
+
+- **Computing, cloud, data centers, and HPC:** server and GPU-node sizing; CPU/GPU/memory allocation; VM and container placement; assignment of compute jobs to servers; communication-graph partitioning; mesh and workload partitioning; and capacity-constrained packing of workloads onto physical infrastructure.
+
+- **Semiconductors and electronics:** FPGA logical-block placement; VLSI partitioning; discrete component and circuit configuration; wafer and component inventory planning; semiconductor supply planning; and fault diagnosis through QUBO/Ising or constraint-satisfaction formulations.
+
+- **Finance, banking, and investment management:** equity, ETF, bond, and credit-portfolio optimization; multi-period asset allocation; portfolio construction under Expected Shortfall or ESG constraints; CAPEX-constrained project selection; and robust portfolio selection under uncertain returns and correlations.
+
+- **Retail, e-commerce, and marketing:** assortment selection under shelf-space constraints; warehouse and micro-fulfillment location; safety-stock optimization; demand-prediction feature selection; parcel and order packing; delivery-driver scheduling; order-to-provider matching; and campaign selection under fixed budgets.
+
+- **Cybersecurity, software, and graph analytics:** minimum-risk security configuration; intrusion-detection feature selection; network segmentation; selection of security controls under budget constraints; minimum test-set selection for software coverage; SAT/CSP-based verification; community detection; knowledge-graph clustering; and critical-node analysis.
+
+- **Aerospace, space, and defense:** satellite-observation scheduling; compatible observation selection under resource conflicts; payload selection under mass and volume constraints; spare-parts and MRO logistics; mission-resource configuration; and multi-level logistics for materials, components, and repair resources.
+
+- **Agriculture and food systems:** coordination and routing of autonomous tractors and harvesters; food and perishables supply planning; cold-chain optimization; inventory planning for perishable raw materials and finished goods; and robust resource planning under operational uncertainty.
+
+- **Infrastructure, construction, and smart cities:** selection of infrastructure assets and connections; allocation of cranes, excavators, trucks, and crews; construction scheduling; sensor placement for area coverage; facility-location models; and discrete planning of interconnected urban or utility assets.
+
+- **Public services, emergency response, education, and events:** ambulance, fire-engine, and rescue-team allocation; evacuation routing; emergency-resource siting and reserve planning; exam scheduling under student conflicts; instructor-to-course and room assignment; and selection of mutually compatible events under shared-resource constraints.
+
+Across these sectors, the recurring mathematical structures include *integer and mixed-integer optimization, routing, scheduling, assignment, resource allocation, knapsack, bin packing, set cover / set packing, facility location, supply-chain and inventory optimization, portfolio optimization, feature selection, graph optimization, Max-Cut, Maximum Independent Set, graph matching, graph coloring, constraint satisfaction, multi-objective optimization, and robust discrete optimization*.
 
 ---
 
@@ -231,5 +269,5 @@ Data Scientist (Spectral Methods) | Quantum Optimization: QUBO, QAOA, Quantum An
 - [Preply](https://preply.com/en/tutor/7756455)
 - [LinkedIn](https://www.linkedin.com/in/serhii-barskyi/)
 - [Sigma Publishing](https://www.linkedin.com/company/sigma-publishinq)
-- 🏆 [Kaggle Competition: Quantum Hybrid BESS Placement — CSSF vs HiGHS](https://www.kaggle.com/competitions/quantum-hybrid-bess-placement-cssf-vs-hi-ghs)
+- 🏆 [Kaggle Competition: Quantum Hybrid BESS Placement - CSSF vs HiGHS](https://www.kaggle.com/competitions/quantum-hybrid-bess-placement-cssf-vs-hi-ghs)
 
