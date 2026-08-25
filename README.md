@@ -27,7 +27,7 @@ For D-Wave infrastructure, this creates a candidate **annealing-control intellig
 
 ## 🧭 Quantum Annealing Trigonometrization
 
-CSSF(QA) is built on the methodology developed in the monograph **[Quantum Annealing Trigonometrization](https://www.linkedin.com/in/serhii-barskyi/)**.
+CSSF(QA) is built on the methodology developed in the monograph **[Quantum Annealing Trigonometrization](https://www.amazon.com/dp/B0HGC64HB4)**.
 
 The central representation principle is simple: variables with genuine periodic or phase geometry should not be flattened unnecessarily into ordinary Euclidean coordinates. CSSF preserves that structure with complex harmonic features such as
 
@@ -137,7 +137,7 @@ The currently frozen hardware-validation pair is Pegasus `Advantage_system4` / `
 
 ## 📘 Scientific foundation
 
-### [Quantum Annealing Trigonometrization](https://www.linkedin.com/in/serhii-barskyi/)
+### [Quantum Annealing Trigonometrization](https://www.amazon.com/dp/B0HGC64HB4)
 
 The monograph develops the mathematical and physical foundation of CSSF(QA), including complex/Hermitian spectral modeling, toric application geometry, AC sensitivity, BESS placement, QUBO/Ising construction, continuous and digitized quantum annealing, D-Wave Pegasus semantics, calibration-resolved operator-action coordinates, statistical validation, and independent physical confirmation.
 
@@ -244,7 +244,7 @@ Across these sectors, the recurring mathematical structures include *integer and
 
 ## 🚀 Get started
 
-- **[Quantum Annealing Trigonometrization](https://www.linkedin.com/in/serhii-barskyi/)**
+- **[Quantum Annealing Trigonometrization](https://www.amazon.com/dp/B0HGC64HB4)**
 - **[Open the adapted case300 real-QPU notebook](cssf_dwave/notebooks/CSSF_dwave_case300.ipynb)**
 - **[Run the scalable GPU/SQA evidence program](cssf_dwave/notebooks/CSSF_QA_DWave_Evidence_Simulator_v56.ipynb)**
 - **[Technical setup and Colab guide](cssf_dwave/README.md)**
