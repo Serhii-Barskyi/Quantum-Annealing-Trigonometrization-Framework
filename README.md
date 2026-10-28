@@ -27,7 +27,7 @@ For D-Wave infrastructure, this creates a candidate **annealing-control intellig
 
 ## 🧭 Quantum Annealing Trigonometrization
 
-CSSF(QA) is built on the methodology developed in the monograph **[Quantum Annealing Trigonometrization](https://www.amazon.com/dp/B0HGC64HB4)**.
+CSSF(QA) is built on the methodology developed in the monograph **[Quantum Annealing Trigonometrization]( https://leanpub.com/quantum-annealing-trigonometrization)**.
 
 The central representation principle is simple: variables with genuine periodic or phase geometry should not be flattened unnecessarily into ordinary Euclidean coordinates. CSSF preserves that structure with complex harmonic features such as
 
